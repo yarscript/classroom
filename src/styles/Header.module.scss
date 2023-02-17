@@ -1,0 +1,72 @@
+$primary-color: #0E927A;
+$side-margin: 10.5%;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+
+  padding: 8px $side-margin;
+}
+
+.navigation {
+
+  button {
+    color: $primary-color;
+    background-color: transparent;
+    border: 1px solid $primary-color;
+    margin-right: 16px;
+    width: 79px;
+    height: 40px;
+  }
+
+  button, div {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+
+    border-radius: 4px;
+  }
+
+  #pin {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: $primary-color;
+    width: 200px;
+    height: 40px;
+
+    span {
+      margin-left: 8.72px;
+    }
+  }
+}
+
+.members {
+
+  display: flex;
+
+  button, .member {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background-color: #F1F1F1;
+  }
+
+  .member {
+    margin-left: -8px;
+    border: 1px solid #FFFFFF;
+  }
+
+  #addMember {
+    margin-right: 20px;
+  }
+
+  #signOut {
+    margin-left: 12px;
+  }
+}
