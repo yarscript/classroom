@@ -13,10 +13,13 @@ $side-margin: 10.5%;
 
 .tasks {
   width: 870px;
-  //height: 1000px;
   background: #FFFFFF;
   border: 1px solid #D1D5DB;
   border-radius: 20px;
+}
+
+.taskContent {
+  margin-top: 32px;
 }
 
 .cardsLayout {
@@ -24,7 +27,6 @@ $side-margin: 10.5%;
   flex-wrap: wrap;
   margin-top: 4px;
   margin-bottom: 52px;
-  //justify-content: space-between;
 }
 
 .cards {

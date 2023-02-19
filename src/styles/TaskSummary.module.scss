@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 32px;
 
   .buttons {
     button {
@@ -12,7 +11,11 @@
       background-color: #F1F1F1;
       border-radius: 50px;
       margin-left: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
     }
+    display: flex;
   }
 }
 
