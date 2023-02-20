@@ -2,9 +2,9 @@ import TaskSummary from "@/components/TaskSummary";
 import WordList from "@/components/WordList";
 import Card from "@/components/Card";
 import CardsLayout from "@/components/CardsLayout";
-import styles from "../styles/Content.module.scss"
 import ChooseWords from "@/components/ChooseWords";
 import {useState} from "react";
+import SectionLayout from "@/components/SectionLayout";
 export default function Task2() {
 
     const [isOpen, setOpen] = useState(true)
@@ -16,17 +16,17 @@ export default function Task2() {
     return (
         <>
             <TaskSummary taskInfo={taskInfo} isOpen={isOpen} setOpen={setOpen}/>
-            <div className={styles.taskContent} style={isOpen ? {display: "block"} : {display: "none"}}>
+            <SectionLayout isOpen={isOpen}>
                 <WordList />
                 <ChooseWords />
                 <CardsLayout>
-                    <div className={styles.cards}>
+                    <div className='[&>*:nth-child(4)]:mr-0'>
                         <Card />
                         <Card />
                         <Card />
                     </div>
                 </CardsLayout>
-            </div>
+            </SectionLayout>
         </>
     )
 }

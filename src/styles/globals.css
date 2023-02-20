@@ -11,32 +11,33 @@
     .header-button {
         @apply bg-[#F1F1F1] w-8 h-8 rounded-full bg-[#F1F1F1] grid place-items-center
     }
+    .note {
+        background: linear-gradient(-45deg,transparent 1.5em, #E3FAF5 0);
+        @apply py-5 pr-[52px] pl-5 rounded-lg relative
+    }
+    .note::after {
+        @apply absolute bottom-0 right-0 content-[''] inline-block w-[2em] h-[2em] rounded-tl-lg;
+        background: linear-gradient(-45deg,transparent 1.5em, #6DE2C9 0);
+    }
+    .taskSummaryButton {
+        @apply w-8 h-8 bg-[#F1F1F1] rounded-full ml-3 inline-flex items-center justify-center
+    }
+    .navButton {
+        @apply inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#F1F1F1]
+    }
+
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #F7F8FA;
+    @apply m-0 p-0 bg-[#F7F8FA]
 }
 
 h1 {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 140%;
-    color: #203B54;
-    margin: 0;
+    @apply font-inter font-semibold text-[28px] leading-[140%] text-[#203B54] m-0
 }
 
 h2 {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 140%;
-    color: #203B54;
-    margin: 0;
+    @apply font-inter font-semibold text-[20px] leading-[140%] text-[#203B54] m-0
 }
 
 p, select > option, select {
@@ -49,6 +50,5 @@ p, select > option, select {
 }
 
 hr {
-    border: 1px solid #D1D5DB;
-    margin: 0;
+    @apply border-solid border border-[#D1D5DB] m-0
 }

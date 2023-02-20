@@ -1,4 +1,3 @@
-import styles from "../styles/Content.module.scss"
 import TaskLayout from "@/components/TaskLayout";
 import Task1 from "@/components/Task1";
 import Task2 from "@/components/Task2";
@@ -8,7 +7,7 @@ import FinishSection from "@/components/FinishSection";
 
 export default function Tasks() {
     return (
-        <div className={styles.tasks}>
+        <div className='w-[870px] bg-[#FFFFFF] border-solid border border-[#D1D5DB] rounded-[20px]'>
             <TaskLayout>
                 <h1>Vocabulary: clothes</h1>
             </TaskLayout>

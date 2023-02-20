@@ -1,4 +1,3 @@
-import styles from "../styles/PreviewModeMessage.module.scss"
 import Image from "next/image";
 import {useState} from "react";
 export default function PreviewModeMessage() {
@@ -6,9 +5,11 @@ export default function PreviewModeMessage() {
     const [isShown, setShown] = useState(true)
 
     return (
-        <div className={styles.wrapper} style={isShown ? {display: "flex"} : {display: "none"}}>
-            <p>Preview mode</p>
-            <button onClick={() => {setShown(!isShown)}}><Image src='/close_icon.svg' width={12} height={12} alt='close'></Image></button>
+        <div className='bg-primary w-full h-9 flex justify-center items-center' style={isShown ? {display: "flex"} : {display: "none"}}>
+            <p className='text-base text-white'>Preview mode</p>
+            <button className='absolute right-[10.5%]' onClick={() => {setShown(!isShown)}}>
+                <Image src='/close_icon.svg' width={12} height={12} alt='close'></Image>
+            </button>
         </div>
     )
 }
