@@ -7,12 +7,16 @@ import ChooseWords from "@/components/ChooseWords";
 import {useState} from "react";
 export default function Task2() {
 
-    const [isOpen, setOpen] = useState(false)
+    const [isOpen, setOpen] = useState(true)
+    const taskInfo = {
+        number: '1.2',
+        explanation: 'Complete the sentences with the words from the box. Match words to the pictures'
+    }
 
     return (
         <>
-            <TaskSummary isOpen={isOpen} setOpen={setOpen}/>
-            <div className={styles.taskContent} style={isOpen ? {display: "none"} : {display: "block"}}>
+            <TaskSummary taskInfo={taskInfo} isOpen={isOpen} setOpen={setOpen}/>
+            <div className={styles.taskContent} style={isOpen ? {display: "block"} : {display: "none"}}>
                 <WordList />
                 <ChooseWords />
                 <CardsLayout>

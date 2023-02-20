@@ -4,12 +4,16 @@ import TeachersNote from "@/components/TeachersNote";
 import {useState} from "react";
 export default function Task3() {
 
-    const [isOpen, setOpen] = useState(false)
+    const [isOpen, setOpen] = useState(true)
+    const taskInfo = {
+        number: '1.3',
+        explanation: 'Read through the sentences and the words in bold with definitions'
+    }
 
     return (
         <>
-            <TaskSummary isOpen={isOpen} setOpen={setOpen}/>
-            <div className={styles.taskContent} style={isOpen ? {display: "none"} : {display: "block"}}>
+            <TaskSummary taskInfo={taskInfo} isOpen={isOpen} setOpen={setOpen}/>
+            <div className={styles.taskContent} style={isOpen ? {display: "block"} : {display: "none"}}>
                 <TeachersNote />
             </div>
         </>

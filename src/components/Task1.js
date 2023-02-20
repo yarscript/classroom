@@ -6,12 +6,15 @@ import styles from "../styles/Content.module.scss"
 import React, { useState } from 'react'
 export default function Task1() {
 
-    const [isOpen, setOpen] = useState(false)
-
+    const [isOpen, setOpen] = useState(true)
+    const taskInfo = {
+        number: '1.1',
+        explanation: 'Match the words to the pictures'
+    }
     return (
         <>
-            <TaskSummary isOpen={isOpen} setOpen={setOpen}/>
-            <div className={styles.taskContent} style={isOpen ? {display: "none"} : {display: "block"}}>
+            <TaskSummary taskInfo = {taskInfo} isOpen={isOpen} setOpen={setOpen}/>
+            <div className={styles.taskContent} style={isOpen ? {display: "block"} : {display: "none"}}>
                 <WordList />
                 <CardsLayout>
                     <div className={styles.cards}>
