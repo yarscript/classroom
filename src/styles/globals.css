@@ -9,7 +9,7 @@
         @apply ml-[-8px] border-[#FFFFFF] w-8 h-8 rounded-full
     }
     .header-button {
-        @apply bg-[#F1F1F1] w-8 h-8 rounded-full bg-[#F1F1F1]
+        @apply bg-[#F1F1F1] w-8 h-8 rounded-full bg-[#F1F1F1] grid place-items-center
     }
 }
 
