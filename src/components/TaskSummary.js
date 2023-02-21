@@ -4,9 +4,9 @@ export default function TaskSummary({taskInfo, isOpen, setOpen}) {
 
     return (
         <>
-            <div className='flex justify-between items-center font-inter font-semibold text-[20px] leading-[140%] text-[#0E927A]'>
+            <div className='flex justify-between items-center font-inter font-semibold text-[20px] leading-[140%] text-textColor'>
                 <div className='flex items-center'>
-                    <button className='p-[11px] rounded-full bg-[#E3FAF5] w-[50px] h-[50px] mr-2.5'>{taskInfo.number}</button>
+                    <button className='p-[11px] rounded-full bg-primaryLight text-primary w-[50px] h-[50px] mr-2.5'>{taskInfo.number}</button>
                     <h2>{taskInfo.explanation}</h2>
                 </div>
                 <div className='flex'>

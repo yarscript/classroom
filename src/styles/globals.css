@@ -9,10 +9,10 @@
         @apply ml-[-8px] border-[#FFFFFF] w-8 h-8 rounded-full
     }
     .header-button {
-        @apply bg-[#F1F1F1] w-8 h-8 rounded-full bg-[#F1F1F1] grid place-items-center
+        @apply bg-greyBackground w-8 h-8 rounded-full bg-[#F1F1F1] grid place-items-center
     }
     .note {
-        background: linear-gradient(-45deg,transparent 1.5em, #E3FAF5 0);
+        background: linear-gradient(-45deg,transparent 1.5em, theme('colors.primaryLight') 0);
         @apply py-5 pr-[52px] pl-5 rounded-lg relative
     }
     .note::after {
@@ -20,10 +20,10 @@
         background: linear-gradient(-45deg,transparent 1.5em, #6DE2C9 0);
     }
     .taskSummaryButton {
-        @apply w-8 h-8 bg-[#F1F1F1] rounded-full ml-3 inline-flex items-center justify-center
+        @apply w-8 h-8 bg-greyBackground rounded-full ml-3 inline-flex items-center justify-center
     }
     .navButton {
-        @apply inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#F1F1F1]
+        @apply inline-flex items-center justify-center w-8 h-8 rounded-full bg-greyBackground
     }
 
 }
@@ -33,11 +33,11 @@ body {
 }
 
 h1 {
-    @apply font-inter font-semibold text-[28px] leading-[140%] text-[#203B54] m-0
+    @apply font-inter font-semibold text-[28px] leading-[140%] text-textColor m-0
 }
 
 h2 {
-    @apply font-inter font-semibold text-[20px] leading-[140%] text-[#203B54] m-0
+    @apply font-inter font-semibold text-[20px] leading-[140%] text-textColor m-0
 }
 
 p, select > option, select {
@@ -50,5 +50,5 @@ p, select > option, select {
 }
 
 hr {
-    @apply border-solid border border-[#D1D5DB] m-0
+    @apply border-solid border-border m-0
 }

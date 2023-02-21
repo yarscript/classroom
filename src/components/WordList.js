@@ -3,8 +3,8 @@ export default function WordList() {
     return (
         <div>
             {words.map(word => {
-                return <div className='inline-block bg-[#CDEDFA] px-3 py-[3px] mr-2 mb-2 rounded
-                                       font-inter font-normal text-lg text-[#203B54]'>{word}</div>
+                return <div className='inline-block bg-lightBlue px-3 py-[3px] mr-2 mb-2 rounded
+                                       font-inter font-normal text-lg text-textColor'>{word}</div>
             })}
         </div>
     )

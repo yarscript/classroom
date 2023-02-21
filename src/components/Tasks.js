@@ -7,7 +7,7 @@ import FinishSection from "@/components/FinishSection";
 
 export default function Tasks() {
     return (
-        <div className='w-[870px] bg-[#FFFFFF] border-solid border border-[#D1D5DB] rounded-[20px]'>
+        <div className='w-[870px] bg-white border-solid border border-border rounded-[20px]'>
             <TaskLayout>
                 <h1>Vocabulary: clothes</h1>
             </TaskLayout>
