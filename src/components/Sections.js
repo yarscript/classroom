@@ -1,19 +1,13 @@
 import styles from "../styles/Sections.module.scss"
+import {useEffect} from "react";
+import axios from "axios";
 
-
-export default function Sections() {
+export default function Sections({sections}) {
     return (
         <>
             <h2>Sections</h2>
             <ul className={styles.list}>
-                <li>Lesson information</li>
-                <li>Warm up</li>
-                <li>Vocabulary clothes</li>
-                <li>Video listening</li>
-                <li>After watching</li>
-                <li>Wrap up</li>
-                <li>Extra practice</li>
-                <li>Finish this unit</li>
+                {sections.map(section => <li>{section.name}</li>)}
             </ul>
         </>
     )

@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Header from "../components/Header";
 import PreviewModeMessage from "@/components/PreviewModeMessage";
 import Content from "@/components/Content";
-export default function Home() {
+import axios from "axios";
+export default function Home({sections}) {
   return (
     <>
         <Head>
@@ -11,7 +11,13 @@ export default function Home() {
         </Head>
         <Header />
         <PreviewModeMessage />
-        <Content />
+        <Content sections={sections}/>
     </>
   )
+}
+
+export async function getServerSideProps() {
+    const result = await axios(`http://localhost:3000/api/sections`);
+    const sections = result.data
+    return { props: {sections}}
 }

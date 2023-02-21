@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React, { useState } from 'react'
 export default function TaskSummary({taskInfo, isOpen, setOpen}) {
-
     return (
         <>
             <div className='flex justify-between items-center font-inter font-semibold text-[20px] leading-[140%] text-textColor'>
