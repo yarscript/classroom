@@ -40,7 +40,11 @@ h2 {
     @apply font-inter font-semibold text-[20px] leading-[140%] text-textColor m-0
 }
 
-p, select > option, select {
+p {
+    @apply font-inter font-normal text-lg text-textColor
+}
+
+select > option, select {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;

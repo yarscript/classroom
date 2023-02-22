@@ -4,16 +4,23 @@ import Task2 from "@/components/Task2";
 import Task3 from "@/components/Task3";
 import TeachersNote from "@/components/TeachersNote";
 import FinishSection from "@/components/FinishSection";
+import WordList from "@/components/WordList";
+import TasksLayout from "@/components/TasksLayout";
+import Words from "@/components/Words";
 
 export default function Tasks() {
     return (
-        <div className='w-[870px] bg-white border-solid border border-border rounded-[20px]'>
+        <TasksLayout>
             <TaskLayout>
                 <h1>Vocabulary: clothes</h1>
             </TaskLayout>
             <hr/>
             <TaskLayout>
                 <TeachersNote />
+            </TaskLayout>
+            <hr/>
+            <TaskLayout>
+                <Words/>
             </TaskLayout>
             <hr/>
             <TaskLayout>
@@ -28,9 +35,6 @@ export default function Tasks() {
                 <Task3 />
             </TaskLayout>
             <hr/>
-            <TaskLayout>
-                <FinishSection />
-            </TaskLayout>
-        </div>
+        </TasksLayout>
     )
 }

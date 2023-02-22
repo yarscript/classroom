@@ -1,19 +1,20 @@
-import Head from 'next/head'
-import Header from "../components/Header";
+import Head from "next/head";
+import Header from "@/components/Header";
 import PreviewModeMessage from "@/components/PreviewModeMessage";
 import Content from "@/components/Content";
 import axios from "axios";
+
 export default function Home({sections}) {
-  return (
-    <>
-        <Head>
-            <title>Classroom</title>
-        </Head>
-        <Header />
-        <PreviewModeMessage />
-        <Content sections={sections} type='tasks'/>
-    </>
-  )
+    return (
+        <>
+            <Head>
+                <title>Classroom</title>
+            </Head>
+            <Header />
+            <PreviewModeMessage />
+            <Content sections={sections} type='wordlist'/>
+        </>
+    )
 }
 
 export async function getStaticProps() {

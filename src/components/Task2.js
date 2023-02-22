@@ -1,5 +1,5 @@
 import TaskSummary from "@/components/TaskSummary";
-import WordList from "@/components/WordList";
+import Words from "@/components/Words";
 import Card from "@/components/Card";
 import CardsLayout from "@/components/CardsLayout";
 import ChooseWords from "@/components/ChooseWords";
@@ -17,7 +17,7 @@ export default function Task2() {
         <>
             <TaskSummary taskInfo={taskInfo} isOpen={isOpen} setOpen={setOpen}/>
             <SectionLayout isOpen={isOpen}>
-                <WordList />
+                <Words />
                 <ChooseWords />
                 <CardsLayout>
                     <div className='[&>*:nth-child(4)]:mr-0'>
