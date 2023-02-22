@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/Header.module.scss"
+
 export default function Header() {
     return (
         <header className='flex justify-between bg-white px-[10.5%] py-[8px] font-inter font-normal text-lg'>

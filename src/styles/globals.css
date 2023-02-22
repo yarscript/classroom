@@ -5,14 +5,30 @@
 @tailwind utilities;
 
 @layer components {
+    .select {
+        @apply flex items-center [&>span]:mx-[10px]
+    }
     .member {
         @apply ml-[-8px] border-[#FFFFFF] w-8 h-8 rounded-full
     }
     .header-button {
         @apply bg-[#F1F1F1] w-8 h-8 rounded-full bg-[#F1F1F1]
     }
-}
-
+    .sidebar-wrapper {
+        border: 1px solid #D1D5DB;
+        height: max-content;
+        
+    }
+    .list-item {
+        margin-bottom: 14px;
+        background-image: url(/list_dot.svg);
+        background-repeat: no-repeat;
+        background-position-y: 10px;
+        padding-left: 20px;
+        line-height: 28px;
+    }
+    }
+  
 body {
     margin: 0;
     padding: 0;
@@ -37,6 +53,7 @@ h2 {
     line-height: 140%;
     color: #203B54;
     margin: 0;
+    margin-bottom: 19px;
 }
 
 p, select > option, select {
