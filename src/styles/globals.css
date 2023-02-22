@@ -5,6 +5,9 @@
 @tailwind utilities;
 
 @layer components {
+    .select {
+        @apply flex items-center [&>span]:mx-[10px]
+    }
     .member {
         @apply ml-[-8px] border-[#FFFFFF] w-8 h-8 rounded-full
     }
@@ -26,6 +29,14 @@
         @apply inline-flex items-center justify-center w-8 h-8 rounded-full bg-greyBackground
     }
 
+    .list-item {
+        @apply mb-3.5 bg-[url('/list_dot.svg')] bg-no-repeat bg-[left_top_10px] pl-5
+    }
+
+}
+
+.list-item-active {
+    @apply marker:content-[''] bg-[url('/active_list_icon.svg')] bg-no-repeat pl-[20px] bg-[left_top_-7px] mb-[14px] text-textColor
 }
 
 body {
@@ -42,15 +53,6 @@ h2 {
 
 p {
     @apply font-inter font-normal text-lg text-textColor
-}
-
-select > option, select {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    color: #203B54;
 }
 
 hr {

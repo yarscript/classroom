@@ -20,10 +20,6 @@ export default function Tasks() {
             </TaskLayout>
             <hr/>
             <TaskLayout>
-                <Words/>
-            </TaskLayout>
-            <hr/>
-            <TaskLayout>
                 <Task1 />
             </TaskLayout>
             <hr/>

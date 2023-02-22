@@ -1,7 +1,7 @@
 import Image from "next/image";
-import {useState} from "react";
-export default function PreviewModeMessage() {
+import { useState } from "react";
 
+export default function PreviewModeMessage() {
     const [isShown, setShown] = useState(true)
 
     return (
