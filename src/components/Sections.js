@@ -6,8 +6,8 @@ export default function Sections({sections}) {
             <h2>Sections</h2>
             <ul className={styles.list}>
                 {sections.map(section =>
-                    <Link href={{pathname: `/${section.title}`}}>
-                        <li key={section.id}>{section.name}</li>
+                    <Link key={section.id} href={{pathname: `/${section.title}`}}>
+                        <li>{section.name}</li>
                     </Link>)}
             </ul>
         </>

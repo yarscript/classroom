@@ -30,7 +30,7 @@ export default function WordList() {
             <TaskLayout>
                 <TaskSummary taskInfo={taskInfo} isOpen={isOpen} setOpen={setOpen}/>
                 <SectionLayout isOpen={isOpen}>
-                    {words.map(word => <Word word={word} last={words.length}/>)}
+                    {words.map(word => <Word key={word.id} word={word} last={words.length}/>)}
                     <button className='w-[170px] h-10 text-primary bg-transparent border border-primary rounded mt-[19px] mb-10'>
                         <Image className='inline mr-2' src='/add_word_icon.svg' width={19} height={14} alt='add words'></Image>Add all words</button>
                 </SectionLayout>
