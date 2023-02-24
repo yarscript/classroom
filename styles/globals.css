@@ -35,6 +35,26 @@
 
 }
 
+.accordion-content {
+    @apply overflow-hidden transition-[max-height] ease-in-out duration-700 max-h-[1000px]
+}
+
+.accordion-content-hidden {
+    @apply overflow-hidden transition-[max-height] ease-in-out duration-700 max-h-0
+}
+
+.section-layout > *:first-child {
+    @apply mt-8
+}
+
+.closedSection {
+    @apply transition transform ease-in-out duration-700 rotate-[-180deg]
+}
+
+.openedSection {
+    @apply transition transform ease-in-out duration-700 rotate-0
+}
+
 .list-item-active {
     @apply marker:content-[''] bg-[url('/active_list_icon.svg')] bg-no-repeat pl-[20px] bg-[left_top_-7px] mb-[14px] text-textColor
 }

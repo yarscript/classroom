@@ -10,15 +10,15 @@ export default function TaskSummary({taskInfo, isOpen, setOpen}) {
                 </div>
                 <div className='flex'>
                     <button onClick={() => setOpen(isOpen => !isOpen)}
-                            className='taskSummaryButton'
-                            style={!isOpen ? { display: "none"} : {display: "inline-flex"}}>
-                        <Image src='/close_section_icon.svg' width={12} height={6} alt='close'></Image>
+                            className='taskSummaryButton'>
+                        <Image src='/close_section_icon.svg' width={12} height={6} alt='close'
+                                className={!isOpen ? 'closedSection' : 'openedSection'}></Image>
                     </button>
-                    <button onClick={() => setOpen(isOpen => !isOpen)}
-                            className='taskSummaryButton'
-                            style={isOpen ? { display: "none"} : {display: "inline-flex"}}>
-                        <Image src='/open_section_icon.svg' width={12} height={6} alt='open'></Image>
-                    </button>
+                    {/*<button onClick={() => setOpen(isOpen => !isOpen)}*/}
+                    {/*        className='taskSummaryButton'*/}
+                    {/*        style={isOpen ? { display: "none"} : {display: "inline-flex"}}>*/}
+                    {/*    <Image src='/open_section_icon.svg' width={12} height={6} alt='open'></Image>*/}
+                    {/*</button>*/}
                     <button className='taskSummaryButton'><Image src='/dots_icon.svg' width={4} height={18} alt='more'></Image></button>
                 </div>
             </div>

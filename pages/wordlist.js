@@ -17,7 +17,7 @@ export default function Home({sections}) {
     )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const result = await axios(`http://localhost:3000/api/sections`);
     const sections = result.data
     return { props: {sections}}
