@@ -1,10 +1,10 @@
-import TaskSummary from "@/components/TaskSummary";
-import Words from "@/components/Words";
-import Card from "@/components/Card";
-import CardsLayout from "@/components/CardsLayout";
-import ChooseWords from "@/components/ChooseWords";
+import TaskSummary from "./TaskSummary";
+import Words from "./Words";
+import Card from "./Card";
+import CardsLayout from "./CardsLayout";
+import ChooseWords from "./ChooseWords";
 import {useState} from "react";
-import SectionLayout from "@/components/SectionLayout";
+import SectionLayout from "./SectionLayout";
 export default function Task2() {
 
     const [isOpen, setOpen] = useState(true)

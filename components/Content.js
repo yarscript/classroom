@@ -1,6 +1,6 @@
-import Tasks from "@/components/Tasks";
-import SideBar from "@/components/SideBar";
-import WordList from "@/components/WordList";
+import Tasks from "./Tasks";
+import SideBar from "./SideBar";
+import WordList from "./WordList";
 
 export default function Content({sections, type}) {
     return (

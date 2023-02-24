@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Sections from "@/components/Sections";
+import Sections from "./Sections";
 
 export default function SideBar({sections}) {
     return (

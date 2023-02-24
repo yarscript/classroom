@@ -1,11 +1,11 @@
-import TaskSummary from "@/components/TaskSummary";
+import TaskSummary from "./TaskSummary";
 import {useEffect, useState} from "react";
-import SectionLayout from "@/components/SectionLayout";
+import SectionLayout from "./SectionLayout";
 import axios from "axios";
-import Word from "@/components/Word";
+import Word from "./Word";
 import Image from "next/image";
-import TasksLayout from "@/components/TasksLayout";
-import TaskLayout from "@/components/TaskLayout";
+import TasksLayout from "./TasksLayout";
+import TaskLayout from "./TaskLayout";
 
 export default function WordList() {
 

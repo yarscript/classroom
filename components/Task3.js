@@ -1,7 +1,7 @@
-import TaskSummary from "@/components/TaskSummary";
-import TeachersNote from "@/components/TeachersNote";
+import TaskSummary from "./TaskSummary";
+import TeachersNote from "./TeachersNote";
 import {useState} from "react";
-import SectionLayout from "@/components/SectionLayout";
+import SectionLayout from "./SectionLayout";
 export default function Task3() {
 
     const [isOpen, setOpen] = useState(true)

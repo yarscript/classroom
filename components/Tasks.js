@@ -1,12 +1,12 @@
-import TaskLayout from "@/components/TaskLayout";
-import Task1 from "@/components/Task1";
-import Task2 from "@/components/Task2";
-import Task3 from "@/components/Task3";
-import TeachersNote from "@/components/TeachersNote";
-import FinishSection from "@/components/FinishSection";
-import WordList from "@/components/WordList";
-import TasksLayout from "@/components/TasksLayout";
-import Words from "@/components/Words";
+import TaskLayout from "./TaskLayout";
+import Task1 from "./Task1";
+import Task2 from "./Task2";
+import Task3 from "./Task3";
+import TeachersNote from "./TeachersNote";
+import FinishSection from "./FinishSection";
+import WordList from "./WordList";
+import TasksLayout from "./TasksLayout";
+import Words from "./Words";
 
 export default function Tasks() {
     return (
