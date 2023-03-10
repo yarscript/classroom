@@ -17,7 +17,7 @@ export default function Home({sections}) {
 }
 
 export async function getServerSideProps() {
-    const result = await axios(`http://localhost:3000/api/sections`);
+    const result = await axios(`https://classroom-delta.vercel.app/api/sections`);
     const sections = result.data
     return { props: {sections}}
 }
